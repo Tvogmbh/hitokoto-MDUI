@@ -1,0 +1,39 @@
+<!doctype html>
+<html> 
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1"> 
+		<script src="js/clipboard.min.js"></script> 
+		<script src="https://v1.hitokoto.cn/"></script> 
+		<link rel="stylesheet" href="mdui/css/mdui.min.css"> 
+		<script src="mdui/js/mdui.min.js"></script> 
+		<script src="jQuery_main.js"></script> 
+		<script src="js/jquery.copy.min.js"></script> 
+		<script src="js/fetch.js"></script> 
+	</head> 
+	<body> 
+		<div class="mdui-typo" style="margin: 10px;margin-top: 100px;"> 
+			<div class="mdui-typo"> 
+				<h1>言</h1> 
+				<br> 
+				<div id="henduodezi"></div> <textarea id="input" value="disabled" disabled style="width: 100%;background-color: #FF5B00;">错误！当前网状态处于断开，代码：0</textarea> 
+				<blockquote id="words"> 
+					<p></p> 
+					<div id="word"></div> 
+					<p></p> 
+					<footer> 
+						<div id="from"></div> 
+						<div id="fromwho"></div> 
+					</footer> 
+				</blockquote> 
+				<br> 
+				<div style="float: right; "> <button class="mdui-btn mdui-btn-raised mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-color-pink-400" onclick="reload()"> <i class="mdui-icon material-icons">rotate_right</i> </button> <button class="btn mdui-btn mdui-btn-raised mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-color-pink-400" id="copy" onclick="copyText()"> 复制此句 </button> 
+					<br> 
+					<div style="float: right;margin-top: 100%;">
+						<b><a href="about.html">关于</a></b>
+					</div> 
+				</div> 
+			</div> 
+		</div>  
+	</body>
+</html>
